@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import model.DB.DB;
 
 /**
  * JavaFX App
@@ -17,6 +18,9 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        if(DB.getConnection() != null){
+            System.out.println("conectado ao Banco de Dados!!!");
+        }
         scene = new Scene(loadFXML("primary"), 640, 480);
         stage.setScene(scene);
         stage.show();
