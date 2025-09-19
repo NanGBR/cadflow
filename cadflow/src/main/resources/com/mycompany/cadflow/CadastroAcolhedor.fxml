@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
-
+<!--adssadsa-->
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.cadflow.CadastroAcolhedorController">
    <children>
       <Label layoutX="112.0" layoutY="20.0" prefHeight="46.0" prefWidth="375.0" text="Cadastro de Novo Usuário">
@@ -24,7 +23,7 @@
                </VBox.margin>
             </Label>
             <TextField prefHeight="20.0" prefWidth="200.0" />
-            <Label prefHeight="18.0" prefWidth="188.0" text="Informe a Senha do Novo Usuário:">
+            <Label prefHeight="18.0" prefWidth="188.0" text="Informe a Senha do Novo Usuário: aaaaaa">
                <VBox.margin>
                   <Insets bottom="-25.0" />
                </VBox.margin>
