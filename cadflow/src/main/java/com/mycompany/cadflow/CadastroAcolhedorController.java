@@ -1,26 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package com.mycompany.cadflow;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
-/**
- * FXML Controller class
- *
- * @author Alysson
- */
 public class CadastroAcolhedorController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+    @FXML
+    private Button btnNovoUsuario;
+
+    @FXML
+    private TextField txtNovoUsuario;
+
+    @FXML
+    private TextField txtSenhaNovoUsuario;
+
+    @FXML
+    private TextField txtSenhaUsuarioAdm;
+    
+    @FXML
+    private ImageView imgCadFlow;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    //teste
+
+    }
 }

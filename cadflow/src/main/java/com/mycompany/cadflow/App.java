@@ -21,7 +21,7 @@ public class App extends Application {
         if(DB.getConnection() != null){
             System.out.println("conectado ao Banco de Dados!!!");
         }
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("Principal"), 800, 600);
         stage.setScene(scene);
         stage.show();
     }

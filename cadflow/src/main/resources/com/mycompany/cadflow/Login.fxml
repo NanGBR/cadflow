@@ -8,21 +8,20 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
 <!--sdada-->
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #7CEB7C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.cadflow.LoginController">
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.cadflow.LoginController">
    <children>
-      <ImageView fitHeight="218.0" fitWidth="337.0" layoutX="232.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../../../../Downloads/CadFlow_Bom__1_-removebg-preview.png" />
-         </image></ImageView>
-      <VBox alignment="CENTER" layoutX="277.0" layoutY="266.0" prefHeight="261.0" prefWidth="245.0" spacing="30.0">
+      <VBox alignment="CENTER" layoutX="277.0" layoutY="266.0" prefHeight="261.0" prefWidth="245.0" spacing="30.0" AnchorPane.bottomAnchor="70.0">
          <children>
             <Label alignment="CENTER" prefHeight="18.0" prefWidth="46.0" text="Usuário:">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
             </Label>
-            <TextField prefHeight="20.0" prefWidth="200.0">
+            <TextField fx:id="txtLoginUsuario" prefHeight="20.0" prefWidth="200.0">
                <VBox.margin>
                   <Insets top="-30.0" />
                </VBox.margin>
@@ -32,23 +31,33 @@
                   <Insets />
                </VBox.margin>
             </Label>
-            <TextField prefHeight="26.0" prefWidth="223.0">
+            <TextField fx:id="txtLoginSenha" prefHeight="26.0" prefWidth="223.0">
                <VBox.margin>
                   <Insets top="-30.0" />
                </VBox.margin>
             </TextField>
-            <Label prefHeight="0.0" prefWidth="154.0" text="Cadastro de Novo Acolhedor" />
-            <Label prefHeight="18.0" prefWidth="116.0" text="Esqueci Minha Senha">
+            <Label fx:id="txtCadastroNovoAcolhedor" prefHeight="0.0" prefWidth="154.0" text="Cadastro de Novo Acolhedor" />
+            <Label fx:id="txtEsqueciMinhaSenha" prefHeight="18.0" prefWidth="116.0" text="Esqueci Minha Senha">
                <VBox.margin>
                   <Insets top="-25.0" />
                </VBox.margin>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" text="Login">
+            <Button fx:id="btnLogin" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" text="Login">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
             </Button>
          </children>
       </VBox>
+      <Label layoutX="357.0" layoutY="43.0" prefHeight="46.0" prefWidth="86.0" text="Login" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCadFlow" fitHeight="146.0" fitWidth="248.0" layoutX="279.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoCadFlow.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

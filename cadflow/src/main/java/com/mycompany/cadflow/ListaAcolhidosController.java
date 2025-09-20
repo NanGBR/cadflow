@@ -4,23 +4,20 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
 
-public class EsqueciMinhaSenhaController implements Initializable {
+public class ListaAcolhidosController implements Initializable {
 
     @FXML
-    private Button btnSalvarNovaSenha;
+    private TableView<?> tableViewAcolhidos;
 
     @FXML
-    private TextField txtNovaSenha;
+    private TableColumn<?, ?> tableViewAcolhidosCodigo;
 
     @FXML
-    private TextField txtSenhaUsuarioAdm;
-
-    @FXML
-    private TextField txtUsuarioRecuperar;
+    private TableColumn<?, ?> tableViewAcolhidosNome;
     
     @FXML
     private ImageView imgCadFlow;
