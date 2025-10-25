@@ -14,7 +14,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.cadflow.EsqueciMinhaSenhaController">
    <children>
-      <VBox alignment="CENTER" layoutX="273.0" layoutY="224.0" prefHeight="300.0" prefWidth="248.0" spacing="30.0" AnchorPane.bottomAnchor="70.0">
+      <VBox alignment="CENTER" layoutX="273.0" layoutY="224.0" prefHeight="300.0" prefWidth="248.0" spacing="25.0" AnchorPane.bottomAnchor="70.0">
          <children>
             <Label prefHeight="18.0" prefWidth="221.0" text="Informe o Usuário que Deseja Recuperar:">
                <VBox.margin>
@@ -22,19 +22,25 @@
                </VBox.margin>
             </Label>
             <TextField fx:id="txtUsuarioRecuperar" prefHeight="20.0" prefWidth="200.0" />
-            <Label prefHeight="18.0" prefWidth="134.0" text="Informe sua Nova Senha:">
+            <Label prefHeight="18.0" prefWidth="210.0" text="Informe o E-mail Vinculado ao Usuario:">
+               <VBox.margin>
+                  <Insets bottom="-25.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtNovaSenha1" prefHeight="20.0" prefWidth="200.0" />
+            <Label prefHeight="18.0" prefWidth="218.0" text="Informe o código enviado ao seu E-mail:">
                <VBox.margin>
                   <Insets bottom="-25.0" />
                </VBox.margin>
             </Label>
             <TextField fx:id="txtNovaSenha" prefHeight="20.0" prefWidth="200.0" />
-            <Label prefHeight="18.0" prefWidth="233.0" text="Informe a Senha do Usuário Administrador:">
+            <Label prefHeight="18.0" prefWidth="149.0" text="Informe a Sua Nova Senha:">
                <VBox.margin>
                   <Insets bottom="-25.0" />
                </VBox.margin>
             </Label>
-            <TextField fx:id="txtSenhaUsuarioAdm" prefHeight="20.0" prefWidth="200.0" />
-            <Button fx:id="btnSalvarNovaSenha" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" text="Salvar Nova Senha" />
+            <TextField fx:id="txtNovaSenha2" prefHeight="20.0" prefWidth="200.0" />
+            <Button fx:id="btnSalvarNovaSenha" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" text="Gerar Nova Senha" />
          </children>
       </VBox>
       <Label layoutX="239.0" layoutY="22.0" prefHeight="46.0" prefWidth="322.0" text="Recuperação de Senha" AnchorPane.topAnchor="35.0">
@@ -47,5 +53,6 @@
             <Image url="@LogoCadFlow.png" />
          </image>
       </ImageView>
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="18.0" prefWidth="218.0" text="Informe o código enviado ao seu E-mail:" />
    </children>
 </AnchorPane>

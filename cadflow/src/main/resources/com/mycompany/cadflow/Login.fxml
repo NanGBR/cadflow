@@ -36,7 +36,6 @@
                   <Insets top="-30.0" />
                </VBox.margin>
             </TextField>
-            <Label fx:id="txtCadastroNovoAcolhedor" prefHeight="0.0" prefWidth="154.0" text="Cadastro de Novo Acolhedor" />
             <Label fx:id="txtEsqueciMinhaSenha" prefHeight="18.0" prefWidth="116.0" text="Esqueci Minha Senha">
                <VBox.margin>
                   <Insets top="-25.0" />

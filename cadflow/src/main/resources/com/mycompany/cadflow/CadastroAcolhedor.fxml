@@ -19,7 +19,7 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <VBox alignment="CENTER" layoutX="276.0" layoutY="228.0" prefHeight="300.0" prefWidth="248.0" spacing="30.0" AnchorPane.bottomAnchor="70.0">
+      <VBox alignment="CENTER" layoutX="276.0" layoutY="228.0" prefHeight="300.0" prefWidth="248.0" spacing="40.0" AnchorPane.bottomAnchor="70.0">
          <children>
             <Label prefHeight="18.0" prefWidth="188.0" text="Informe o Nome do Novo Usuário:">
                <VBox.margin>
@@ -27,19 +27,13 @@
                </VBox.margin>
             </Label>
             <TextField fx:id="txtNovoUsuario" prefHeight="20.0" prefWidth="200.0" />
-            <Label prefHeight="18.0" prefWidth="188.0" text="Informe a Senha do Novo Usuário: aaaaaa">
+            <Label prefHeight="18.0" prefWidth="186.0" text="Informe a Senha do Novo Usuário:">
                <VBox.margin>
                   <Insets bottom="-25.0" />
                </VBox.margin>
             </Label>
             <TextField fx:id="txtSenhaNovoUsuario" prefHeight="20.0" prefWidth="200.0" />
-            <Label prefHeight="18.0" prefWidth="233.0" text="Informe a Senha do Usuário Administrador:">
-               <VBox.margin>
-                  <Insets bottom="-25.0" />
-               </VBox.margin>
-            </Label>
-            <TextField fx:id="txtSenhaUsuarioAdm" prefHeight="20.0" prefWidth="200.0" />
-            <Button fx:id="btnNovoUsuario" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" text="Novo Usuário" />
+            <Button fx:id="btnNovoUsuario" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" text="Cadastrar Novo Usuário" />
          </children>
       </VBox>
       <ImageView fx:id="imgCadFlow" fitHeight="146.0" fitWidth="248.0" layoutX="279.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
