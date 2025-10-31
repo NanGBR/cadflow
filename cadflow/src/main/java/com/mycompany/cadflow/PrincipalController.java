@@ -12,7 +12,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.image.ImageView;
-    //teste
+
+import com.mycompany.cadflow.services.SceneService;
 /**
  * FXML Controller class
  *
@@ -46,10 +47,30 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private Label txtTelaPrincipalCadFlow;
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
+
+    @FXML
+    private void abrirCadastroAcolhido() {
+        SceneService.show("CadastrarAcolhido");
+    }
+
+    @FXML
+    private void abrirDadosAcolhido() {
+        SceneService.show("DadosAcolhidos");
+    }
+
+    @FXML
+    private void abrirListaAcolhidos() {
+        SceneService.show("ListaAcolhidos");
+    }
+
+    @FXML
+    private void abrirCadastroAcolhedor() {
+        SceneService.show("CadastroAcolhedor");
+    }
+
 }
