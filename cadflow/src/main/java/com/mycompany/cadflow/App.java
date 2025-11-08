@@ -9,9 +9,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import model.DB.DB;
 
-/**
- * JavaFX App
- */
 public class App extends Application {
 
     private static Scene scene;
@@ -21,7 +18,7 @@ public class App extends Application {
         if(DB.getConnection() != null){
             System.out.println("conectado ao Banco de Dados!!!");
         }
-        scene = new Scene(loadFXML("Principal"), 800, 600);
+        scene = new Scene(loadFXML("Login"), 800, 600);
         stage.setScene(scene);
         stage.show();
     }
@@ -38,5 +35,4 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
 }
