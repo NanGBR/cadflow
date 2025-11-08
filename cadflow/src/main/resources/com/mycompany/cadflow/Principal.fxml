@@ -14,8 +14,7 @@
 
 <!--sdsadasd-->
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox prefHeight="632.0" prefWidth="839.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -50,7 +49,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="429.0" prefWidth="800.0">
                <children>
-                  <TableView prefHeight="419.0" prefWidth="789.0">
+                  <TableView fx:id="tableViewAcolhidos" prefHeight="419.0" prefWidth="789.0">
                     <columns>
                       <TableColumn fx:id="tableViewAcolhidosCodigo" prefWidth="160.7999633550644" text="Código Acolhido" />
                       <TableColumn fx:id="tableViewAcolhidosNome" prefWidth="619.199951171875" text="Nome Acolhido" />

@@ -15,6 +15,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.cadflow.CadastrarAcolhidoController">
    <children>
       <HBox alignment="CENTER" layoutX="213.0" layoutY="14.0" prefHeight="122.0" prefWidth="581.0" spacing="40.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
