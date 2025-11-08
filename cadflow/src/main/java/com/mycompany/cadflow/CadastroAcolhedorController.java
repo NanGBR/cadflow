@@ -7,9 +7,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import model.classes.Acolhido;
 
 public class CadastroAcolhedorController implements Initializable {
-
+    
     @FXML
     private Button btnNovoUsuario;
 

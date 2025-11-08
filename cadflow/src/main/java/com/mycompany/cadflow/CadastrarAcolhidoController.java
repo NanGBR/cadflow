@@ -1,6 +1,7 @@
 package com.mycompany.cadflow;
 
 import java.net.URL;
+import java.time.ZoneId;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -8,8 +9,24 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import model.classes.Acolhido;
 
 public class CadastrarAcolhidoController implements Initializable {
+
+    private Acolhido acolhido;
+
+    public void setAcolhido(Acolhido acolhido) {
+        this.acolhido = acolhido;
+
+        txtDadosNome.setText(acolhido.getNome());
+        txtDadosNomeSocial.setText(acolhido.getNomeSocial());
+        txtDadosCpf.setText(acolhido.getCpf());
+        txtDadosSaude.setText(acolhido.getInfoSaude());
+
+        if (acolhido.getDataNascimento() != null) {
+            dateDadosNascimento.setValue(acolhido.getDataNascimento());
+        }
+    }
 
     @FXML
     private ComboBox<?> cmbBoxDadosEstado;

@@ -101,7 +101,7 @@ public class LoginController implements Initializable {
 
     private void loadMainScene() throws IOException {
         Stage stage = (Stage) btnLogin.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("ListaAcolhidos.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
         Parent root = loader.load();
 
         Scene scene = new Scene(root);
