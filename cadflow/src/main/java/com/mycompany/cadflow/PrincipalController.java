@@ -125,6 +125,7 @@ public class PrincipalController implements Initializable {
                 }
             }
         };
+
         tableViewAcolhidos.setOnMouseClicked(cliqueMouse);   
 
 //        btnExcluir.setOnAction((t) -> {
@@ -145,6 +146,5 @@ public class PrincipalController implements Initializable {
 //                }
 //            }
 //        });
-}
-
+    }
 }
