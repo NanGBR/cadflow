@@ -7,4 +7,5 @@ module com.mycompany.cadflow {
     opens com.mycompany.cadflow to javafx.fxml;
     exports com.mycompany.cadflow;
     requires jbcrypt;
+    opens model.classes to javafx.base;
 }
