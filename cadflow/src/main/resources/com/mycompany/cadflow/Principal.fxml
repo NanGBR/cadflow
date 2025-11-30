@@ -14,7 +14,7 @@
 
 <!--sdsadasd-->
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.cadflow.PrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.cadflow.PrincipalController">
    <children>
       <VBox prefHeight="632.0" prefWidth="839.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -51,8 +51,9 @@
                <children>
                   <TableView fx:id="tableViewAcolhidos" prefHeight="419.0" prefWidth="789.0">
                     <columns>
-                      <TableColumn fx:id="tableViewAcolhidosCodigo" prefWidth="160.7999633550644" text="Código Acolhido" />
-                      <TableColumn fx:id="tableViewAcolhidosNome" prefWidth="619.199951171875" text="Nome Acolhido" />
+                      <TableColumn fx:id="tableViewAcolhidosCodigo" prefWidth="53.0" text="Código" />
+                      <TableColumn fx:id="tableViewAcolhidosNome" prefWidth="649.0" text="Nome" />
+                        <TableColumn fx:id="tableViewAcolhidosStatus" prefWidth="77.0" text="Status" />
                     </columns>
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" />
